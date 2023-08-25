@@ -7,7 +7,7 @@ const About = () => {
   const state = useContext(NoteContext);
 
   return (
-    <div><AddNote/> 
+    <div>
       </div>
   );
 };

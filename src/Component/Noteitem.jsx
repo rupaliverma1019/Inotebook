@@ -7,7 +7,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const Noteitem = (props) => {
   const context = useContext(NoteContext)
   const {deleteNote} = context;
-   const  { note }=props;
+   const  { note, updateNote}=props;
   return (
     <div className='col-md-3'>
         
@@ -17,6 +17,7 @@ const Noteitem = (props) => {
     <h5 class="card-title">{note.title}</h5>
     <p class="card-text">{note.description}</p>
     <i class="bi bi-trash3" onClick={()=>{deleteNote(note._id)}}></i>
+    <i class="bi bi-pencil-square" onClick={()=>{updateNote(note)}}></i>
     
     
   </div>
